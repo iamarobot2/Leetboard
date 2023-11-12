@@ -1,0 +1,24 @@
+{
+  "name": "leetboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamarobot2/Leetboard.git"
+  },
+  "author": "Avin Joshy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamarobot2/Leetboard/issues"
+  },
+  "homepage": "https://github.com/iamarobot2/Leetboard#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}
