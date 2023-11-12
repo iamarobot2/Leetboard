@@ -10,7 +10,7 @@ let users = [
     {
         rank:1,
         name:"Avin Joshy",
-        username:"iamarobot2129",
+        username:"iamrobot2129",
         questionsolved:0,
     },
     {
