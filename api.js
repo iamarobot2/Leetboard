@@ -26,7 +26,7 @@ var users = [
     {
         rank:0,
         name:"Augustine salas",
-        username:"",
+        username:"Augustine__",
         questionsolved:0,
     },
     {
@@ -61,7 +61,7 @@ for(i=0;i<users.length;i++)
     tbdy.appendChild(tr)
 }
 
-fetch('https://leetboard-1yoxti5gy-avin-joshys-projects.vercel.app')
+fetch('https://leetboard-1yoxti5gy-avin-joshys-projects.vercel.app/fetchUsersData')
 .then(response => response.json())
 .then(usersData => {
     usersData.forEach(userData => {
