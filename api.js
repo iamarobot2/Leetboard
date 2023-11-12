@@ -61,7 +61,7 @@ for(i=0;i<users.length;i++)
     tbdy.appendChild(tr)
 }
 
-fetch('https://leetboard-1yoxti5gy-avin-joshys-projects.vercel.app/fetchUsersData')
+fetch('https://leetboard.vercel.app/fetchUsersData')
 .then(response => response.json())
 .then(usersData => {
     usersData.forEach(userData => {
