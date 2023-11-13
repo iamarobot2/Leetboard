@@ -69,7 +69,7 @@ fetch('https://leetboard.vercel.app/fetchUsersData')
             user.questionsolved = userData.totalSolved;
         }
     });
-
+users.sort((a, b) => b.name - a.name);
     users.sort((a, b) => b.questionsolved - a.questionsolved);
 for(i=0;i<users.length;i++)
 {
