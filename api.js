@@ -47,7 +47,6 @@ users.sort((a,b)=>{
     }
     return 0;
 });
-users.sort((a,b)=>b.rank-a.rank);
 var tbdy = document.getElementById('tbody');
 for(i=0;i<users.length;i++)
 {
