@@ -36,7 +36,7 @@ var users = [
         questionsolved:0,
     }
 ]
-users.sort((a,b)=>{
+/*users.sort((a,b)=>{
     if(a.name < b.name)
     {
         return -1;
@@ -46,7 +46,7 @@ users.sort((a,b)=>{
         return 1;
     }
     return 0;
-});
+});*/
 var tbdy = document.getElementById('tbody');
 for(i=0;i<users.length;i++)
 {
