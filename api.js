@@ -32,7 +32,7 @@ var users = [
     {
         rank:0,
         name:"Arun KA",
-        username:"",
+        username:"arun_ka",
         questionsolved:0,
     }
 ]
@@ -74,6 +74,13 @@ users.sort((a, b) => b.name - a.name);
 for(i=0;i<users.length;i++)
 {
     var tr = document.createElement('tr');
+    if (i === 0) {
+        tr.className = 'first-place';
+    } else if (i === 1) {
+        tr.className = 'second-place';
+    } else if (i === 2) {
+        tr.className = 'third-place';
+    }
     for(let val in users[i])
     {
         let td = document.createElement('td');

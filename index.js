@@ -40,7 +40,7 @@ let users = [
     {
         rank:0,
         name:"Arun KA",
-        username:"",
+        username:"arun_ka",
         questionsolved:0,
     }
 ];
