@@ -48,7 +48,7 @@ var users = [
     return 0;
 });*/
 var tbdy = document.getElementById('tbody');
-for(i=0;i<users.length;i++)
+/*for(i=0;i<users.length;i++)
 {
     var tr = document.createElement('tr');
     for(let val in users[i])
@@ -59,7 +59,7 @@ for(i=0;i<users.length;i++)
     }
     tbdy.appendChild(tr)
 }
-
+*/
 fetch('https://leetboard.vercel.app/fetchUsersData')
 .then(response => response.json())
 .then(usersData => {
@@ -71,6 +71,17 @@ fetch('https://leetboard.vercel.app/fetchUsersData')
     });
 
     users.sort((a, b) => b.questionsolved - a.questionsolved);
+for(i=0;i<users.length;i++)
+{
+    var tr = document.createElement('tr');
+    for(let val in users[i])
+    {
+        let td = document.createElement('td');
+        td.innerHTML=users[i][val];
+        tr.append(td);
+    }
+    tbdy.appendChild(tr)
+}
     for(let i = 0; i < users.length; i++) {
         users[i].rank = i + 1;
         let tr = tbdy.children[i];
